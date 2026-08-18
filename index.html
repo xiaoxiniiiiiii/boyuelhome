@@ -1,46 +1,13 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BOYUÉ — Considered living</title>
-  <meta name="description" content="BOYUÉ home essentials by 博裕貿易發展有限公司." />
-  <link rel="stylesheet" href="./styles.css" />
-</head>
-<body>
-  <div class="topbar">Complimentary delivery on orders over $500 <span>·</span> Designed for considered living</div>
-  <header class="site-header">
-    <a href="#home" class="brand">BOYUÉ <small>HOME ESSENTIALS</small></a>
-    <nav class="main-nav" aria-label="Main navigation">
-      <a href="#shop">Shop all</a><a href="#shop?category=seating">Seating</a><a href="#shop?category=lighting">Lighting</a><a href="#shop?category=tabletop">Tabletop</a><a href="#shop?category=textiles">Textiles</a><a href="#shop?category=storage">Storage</a>
-    </nav>
-    <div class="header-actions"><button class="icon-btn" data-action="search" aria-label="Search">⌕</button><a href="#admin" class="icon-btn" aria-label="Account">◯</a><button class="cart-trigger" data-action="cart">Bag <span id="cart-count">0</span></button></div>
-  </header>
-
-  <main id="app">
-    <section id="home" class="hero">
-      <div class="hero-copy"><p class="eyebrow">THE QUIET EDIT · 2026</p><h1>Objects with<br><em>presence.</em></h1><p class="hero-text">A restrained collection of furniture and small rituals for rooms that feel like your own.</p><a href="#shop" class="button button-dark">Explore the collection <span>↗</span></a></div>
-      <div class="hero-image"><img src="./public/assets/home-collection.png" alt="Curated home interiors featuring a boucle chair, pendant light, travertine table, linen bedding and oak console" /></div>
-      <div class="hero-note">Five pieces. One point of view.<br><b>Hong Kong · Est. 2024</b></div>
-    </section>
-
-    <section class="intro section-pad"><div><p class="eyebrow">A slower kind of home</p><h2>Made to stay<br>in the room.</h2></div><div class="intro-copy"><p>BOYUÉ brings together honest materials, tactile forms, and everyday objects with a little more intention. Each piece is selected for the way it settles into a space — quietly, over time.</p><a href="#about">Read our story →</a></div></section>
-
-    <section class="category-strip section-pad"><div class="section-heading"><div><p class="eyebrow">Browse by mood</p><h2>The collection</h2></div><a href="#shop" class="text-link">View all pieces ↗</a></div><div class="category-grid" id="category-grid"></div></section>
-
-    <section class="feature-banner section-pad"><div class="feature-image image-crop crop-3"></div><div class="feature-copy"><p class="eyebrow">Material study / 04</p><h2>Warm stone,<br>soft edges.</h2><p>Natural travertine carries the marks of its making. We like the imperfect, the grounding, the things that become more beautiful with use.</p><a href="#shop?category=tabletop" class="button button-light">Shop tabletop <span>↗</span></a></div></section>
-
-    <section id="shop" class="shop section-pad"><div class="section-heading shop-heading"><div><p class="eyebrow">The edit</p><h2 id="shop-title">All pieces</h2></div><div class="filters" id="filters"></div></div><div class="product-grid" id="product-grid"></div></section>
-
-    <section id="about" class="manifesto section-pad"><div class="manifesto-mark">B</div><div><p class="eyebrow">About BOYUÉ</p><h2>Less noise.<br>More feeling.</h2><p>We believe a home is built from repeat encounters: the chair you reach for, the lamp you switch on first, the bowl that always finds its way to the table. BOYUÉ is a considered edit of those encounters.</p><a href="#contact" class="text-link">Talk to us →</a></div></section>
-  </main>
-
-  <footer id="contact" class="site-footer"><div class="footer-top"><div class="footer-brand"><div class="brand">BOYUÉ <small>HOME ESSENTIALS</small></div><p>Considered objects for everyday rooms.</p></div><div><h4>Explore</h4><a href="#shop">Shop all</a><a href="#shop?category=seating">Seating</a><a href="#shop?category=lighting">Lighting</a><a href="#shop?category=tabletop">Tabletop</a><a href="#shop?category=textiles">Textiles</a><a href="#shop?category=storage">Storage</a></div><div><h4>Care</h4><a href="#payment">Payment</a><a href="#returns">Returns & refunds</a><a href="#shipping">Shipping policy</a><a href="#tracking">Order tracking</a><a href="#cancellation">Cancellation policy</a></div><div><h4>Company</h4><a href="#about">About us</a><a href="#terms">Terms of service</a><a href="#privacy">Privacy policy</a><a href="#dmca">DMCA</a><a href="#admin">Admin portal</a></div></div><div class="footer-legal"><div><b>博裕貿易發展有限公司</b><br>381-383 Lockhart Road, Wan Chai District, Hong Kong Special Administrative Region<br>Registration no.: [to be completed by the legal entity]</div><div>boyumaoyifazhan@outlook.com<br>© 2026 BOYUÉ. All rights reserved.</div></div></footer>
-
-  <aside class="cart-drawer" id="cart-drawer" aria-hidden="true"><div class="drawer-head"><div><p class="eyebrow">Your selection</p><h2>Shopping bag</h2></div><button data-action="close-cart" class="close-btn">×</button></div><div id="cart-items" class="cart-items"></div><div class="drawer-foot"><div class="total-row"><span>Subtotal</span><strong id="cart-total">$0</strong></div><p class="fine-print">Taxes and delivery calculated at checkout.</p><button class="button button-dark full" data-action="checkout">Proceed to checkout <span>→</span></button></div></aside><div class="scrim" data-action="close-cart"></div>
-
-  <div class="page-modal" id="page-modal" aria-hidden="true"><div class="modal-card"><button class="close-btn" data-action="close-modal">×</button><div id="modal-content"></div></div></div>
-  <div class="toast" id="toast"></div>
-  <script src="./app.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="BOYUÉ home essentials by 博裕貿易發展有限公司." />
+    <title>BOYUÉ — Considered living</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>

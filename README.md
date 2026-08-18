@@ -1,10 +1,24 @@
 # BOYUÉ Home Essentials
 
-A static, responsive storefront prototype for 博裕貿易發展有限公司.
+A responsive React + Vite storefront prototype for 博裕貿易發展有限公司.
 
 ## Run
 
-Open `index.html` directly, or serve this folder with any static server.
+```bash
+npm install
+npm run dev
+```
+
+Create a production build with `npm run build`.
+
+### Windows PowerShell
+
+If PowerShell blocks `npm.ps1` with an execution-policy error, use the Windows command shim instead:
+
+```powershell
+npm.cmd install
+npm.cmd run dev
+```
 
 ## Demo admin
 
